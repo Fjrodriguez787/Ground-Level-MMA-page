@@ -1,0 +1,527 @@
+/******************************************
+/* SETUP
+/*******************************************/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+/* #container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.hero-header {
+  width: 100%;
+  background: #778899;
+  height: 726px;
+}
+
+.header-list {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  padding: 20px 10px;
+  float: left;
+}
+
+.header-left-cont {
+  width: 40%;
+  float: left;
+  color: white;
+  font-size: 24px;
+}
+
+.header-center-cont{
+  width: 20%;
+  float: left;
+}
+
+.header-right-cont{
+  width: 40%;
+  float: left;
+}
+
+.header-list-item {
+  float: left;
+  margin: 0 15px;
+}
+
+.header-list-item:hover{
+  opacity: .6;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.lg-logo {
+  display: block;
+  text-align: center;
+  height: 42px;
+  width: 40px;
+  margin: 0 auto;
+}
+
+.header-button {
+    float: right;
+    height: 34px;
+    border-radius: 3px;
+    color: #778899;
+    font-size: 15px;
+    width: 75px;
+}
+
+.header-button:hover{
+  border: 1px solid white;
+  background: #778899;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+
+.hero-main-text, .hero-main-helper{
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 9rem;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.hero-main-helper{
+  font-size: 18px;
+  text-transform: lowercase;
+  width: 86%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.icon-living{
+  width: 250px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+ .icon-living i{
+   font-size: 25px;
+ }
+.icon-living span{
+  font-size: 25px;
+  padding: 0 14px;
+  /* position: relative; */
+  bottom: 5px;
+}
+header h1{
+  color: white;
+  text-align: center;
+  font-size: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header span{
+  color: white;
+  text-align: center;
+}
+header video{
+  border: 1px solid black;
+  height: 90px;
+  width: 7%;
+
+}
+.why{
+  border: 1px transparent;
+  width: 50%;
+  height: 550px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ h2{
+  color: black;
+  font-size: 32px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blank{
+  border: 1px solid black;
+  width: 43%;
+  height: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: #778899;
+}
+.blank2{
+  border: 1px solid black;
+  width: 43%;
+  height: 92px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: #778899;
+}
+h1{
+ color: black;
+ font-size: 18px;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+}
+.why p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+.octomom{
+  border: 1px solid black;
+  width: 100%;
+  height: 726px;
+  background: lightgray;
+}
+.octomom p{
+  padding-right: 33px;
+  padding-left: 33px;
+  font-size: 18px;
+}
+.button{
+  width:80px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.middle-button{
+  height: 42px;
+  border-radius: 3px;
+  color: #778899;
+  font-size: 15px;
+  width: 75px;
+}
+
+.middle-button:hover{
+  border: 1px solid white;
+  background: #778899;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+
+.end-button{
+  height: 42px;
+  border-radius: 3px;
+  color: #778899;
+  font-size: 15px;
+  width: 80px;
+}
+
+.end-button:hover{
+  border: 1px solid white;
+  background: #778899;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  color: white;
+}
+
+.one{
+  float: left;
+  display: inline-block;
+  border: 1px solid black;
+  width: 50%;
+  height: 726px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.two{
+  float: left;
+  display: inline-block;
+  border: 1px solid black;
+  width: 50%;
+  height: 726px;
+}
+.level{
+  border: 1px solid gray;
+  width: 100%;
+  height: 400px;
+}
+.level h1{
+  font-size: 25px;
+}
+.level p{
+  padding-right: 33px;
+  padding-left: 33px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.button2{
+  width:80px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-footer{
+  width: 100%;
+  border: 1px solid black;
+  background: black;
+  clear: both;
+}
+.left{
+  width: 85%;
+  height: 150px;
+  float: left;
+}
+.left li{
+  list-style: none;
+  display: inline;
+  float: left;
+}
+
+.fb {
+  width: 30px;
+  height: 20px;
+  float: left;
+  color: white;
+}
+.twitter{
+  width: 30px;
+  height: 20px;
+  float: left;
+  color: white;
+}
+.mail{
+  width: 30px;
+  height: 0px;
+  float: left;
+  color: white;
+}
+.right{
+  width: 15%;
+  height: 150px;
+  float: right;
+}
+.right li{
+  list-style: none;
+  float: right;
+}
+.bigfont{
+  font-size: 10px;
+  color: white;
+  font-style: bold;
+  /* float: right; */
+  width:50px;
+  height: 15px;
+}
+.littlefont{
+  padding-top: 10px;
+  color: white;
+  /* float: right; */
+  width:80px;
+  height: 20px;
+}
+.address{
+  padding-top: 2px;
+  font-size: 10px;
+  color: white;
+  /* float: right; */
+  width: 80px;
+  height: 20px;
+}
+.bigfont{
+
+  color: white;
+  /* float: right; */
+  width:80px;
+  height: 20px;
+}
+footer{
+  height: 50px;
+  width: 100%;
+  float: left;
+  border-top: 2px solid gray;
+}
+.end{
+  width: 80%;
+  float: left;
+}
+.end p{
+  float: left;
+  color: white;
+  font-size: 12px;
+}
+.footer-logo{
+  height: 50px;
+  width: 20%;
+  float: left;
+}
+.lg-logo2{
+  height: 42px;
+  width: 40px;
+  float: right;
+  padding-right: 3%;
+}
+.right ul li{
+  display: none;
+}
+.right{
+  display: none;
+}
+.left li .fb, .twitter, .mail{
+  text-align: center;
+}
+
+
+/* Media Querie */
+@media only screen and (max-width: 501px){
+  .hero-header .header-list li{
+    display: none;
+  }
+  .hero-header img{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-header p{
+    display: none;
+  }
+  .hero-header i, span{
+    display: none;
+  }
+  .hero-header .header-list .burger{
+    display: block;
+  }
+.header-right-cont .header-button{
+  display: none;
+}
+.octomom{
+  height: 1452px;
+}
+.octomom .one{
+  width: 100%;
+}
+.octomom .two{
+  width: 100%;
+}
+.level{
+  height: 200px;
+}
+.level p{
+  display: none;
+}
+.left{
+  width: 100%;
+  background: black;
+}
+
+.right{
+  width: 100%;
+  background: black;
+}
+.right li{
+  float: none;
+}
+
+.littlefont{
+  width:10px;
+  height: 20px;
+  float: left;
+}
+.address{
+  float: left;
+  width: 10px;
+  height: 20px;
+}
+.bigfont{
+  float: left;
+  width:10px;
+}
+
+}
+@media (min-width: 502px) and (max-width: 768px){
+
+.header-list .burger{
+    display: none;
+  }
+  .one{
+    width: 100%;
+
+  }
+  .two{
+    width: 100%;
+  }
+
+}
+
+@media (min-width: 769px){
+
+  .header-list .burger{
+    display: none;
+}
+}
+/*
+@media only screen and (min-width: 768px){}
+
+@media only screen and (min-width: 1024px){} */
